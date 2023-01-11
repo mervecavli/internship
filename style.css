@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+
 body{
     background-image:url(background.jpg);
 }
@@ -37,6 +40,9 @@ header#banner{
     left: 10px;
     color: white;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
 
 }
 .sidenav a#contact{
@@ -62,6 +68,10 @@ nav ul li a{
     padding-left: 30px;
     padding-top: 10px;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+
 
 
 }
@@ -69,34 +79,73 @@ section{
     width: 940px;
     height: 450px;
     margin: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     position: center;
     float: left;
     padding-top: 10px;
 }
 
 div#article-left{
-    background-color: aqua;
+    background-color: transparent;
     display: inline-block;
-    position: absolute;
-    margin-top: 150px;
-    left: 25%;
+    position: relative;
+    margin-top: 120px;
+    margin-left: -370px;
     text-align: center;
+    z-index: 1;
+}
+h1#number{
+    font-size: 170px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 154, 38);
+    display: block;
+    float: left;
+    position: relative;
+    margin-top:auto;
+    left: 0px;
+    
+}
+h5#number-description{
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    color:white;
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: -250px;
+    margin-top: 200px;
+
 }
 div#article-right{
-    background-color: aqua;
+    background-color: transparent;
     display: inline-block;
     position: absolute;
     margin-top: 150px;
     right: 25%;
     text-align: center;
 }
+button#btn{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic bold;
+    
+    color: white;
+    background-color: rgb(255, 154, 38);
+    transform: skew(-20deg);
+    width: 150px;
+    height: 30px;
+    border-style: none;
+    margin-right: 150px;
+
+}
 div#line{
-    width: 2px;
+    width: 1px;
     height: 350px;
     background-color: rgb(255, 154, 38);
-    margin: 30px 470px;
+    margin-top: auto;
+    margin-left: 50%;
     float: left;
+    z-index: 0;
+    
 
 }
 /*aside{
