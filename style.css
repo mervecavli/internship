@@ -9,25 +9,40 @@ body{
     width: 100%;
     height: 100vh;
     background-color: rgb(17, 17, 17);
-    opacity: 0.8;
+    opacity: 0.9;
     margin: 0 0 0 0;
     padding-top: 10px;
     padding-left: 150px;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
 }
 
 header#banner{
-    width: 940px;
+    width: 1200px;
     height: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     margin: auto 10px;
     display: inline-block;
-    text-align: center;
+    text-align: left;
+    font-size: 10px;
+    text-transform: lowercase;
+    color: white;
+}
 
-    
+header#banner i{
+    text-transform: lowercase;
+    display: block;
+    float: left;
+}
 
+header#banner nav{
+    display: block;
+    float: left;
+    margin-left:80%;
+    margin-bottom: 20px;
+    background-color: aqua;
 }
 .sidenav{
     background-color: transparent;
@@ -49,11 +64,32 @@ header#banner{
     padding-bottom: 120px;
 }
 nav{
-    width: 940px;
+    width: 1200px;
     height: 80px;
     margin: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     float: left;
+    position: relative;
+    z-index: 1;
+}
+nav div#triangle{
+    height: 0px;
+    width: 0px;
+    border-left: 40px solid rgb(255, 154, 38);
+    border-bottom: 40px solid rgb(255, 154, 38);
+    border-top: 40px solid transparent;
+    border-right: 40px solid transparent;
+    float: left;
+    position: relative;
+}
+div#triangle i{
+    width: 40px;
+    height: 80px;
+    font-size: 20px;
+    background-color: transparent;
+    display: flex;
+    margin-top: -12px;
+    margin-left: -7px;
 }
 nav ul{
     list-style: none;
@@ -65,18 +101,46 @@ nav ul li{
 }
 nav ul li a{
     display: block;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 10px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: black;
+}
 
-
+nav ul#right li{
+    display: block;
+    float: right;
 
 }
+
+button#getq{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    margin-right: 10px;
+    background-color:rgb(255, 154, 38);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-style: none;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+nav ul#right li a{
+    background-color: transparent;
+    padding-right: 15px; 
+    line-height: 3px;
+    font-size: small;
+}
+nav ul#right li a#number{
+    color: red;
+}
+
 section{
-    width: 940px;
+    width: 1200px;
     height: 450px;
     margin: 10px;
     background-color: transparent;
@@ -88,9 +152,9 @@ section{
 div#article-left{
     background-color: transparent;
     display: inline-block;
-    position: relative;
+    position: absolute;
     margin-top: 120px;
-    margin-left: -370px;
+    margin-left: 50px;
     text-align: center;
     z-index: 1;
 }
@@ -123,11 +187,11 @@ div#article-right{
     margin-top: 150px;
     right: 25%;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 button#btn{
     font-family: 'Roboto', sans-serif;
     font-style: italic bold;
-    
     color: white;
     background-color: rgb(255, 154, 38);
     transform: skew(-20deg);
@@ -137,9 +201,54 @@ button#btn{
     margin-right: 150px;
 
 }
+h1#title{
+    font-size:33px;
+    color: white;
+    background-color: transparent;
+    width: 400px;
+    height: 100px;
+    word-spacing: 2px;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+h5#description{
+    color: white;
+    width: 400px;
+    height: 20px;
+    position: absolute;
+    text-align: left;
+    padding-left: 30px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    font-size: small;
+    background-color: transparent;
+    margin-top: -40px;
+}
+
+button#btn2{
+    width: 140px;
+    height: 50px;
+    margin-right: 160px;
+    background-color:rgb(255, 154, 38);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-style: none;
+}
+div#article-right i{
+    font-size: 60px;
+    color: white;
+    display: flex;
+    position: relative;
+    margin-left: 250px;
+    bottom: 50px;
+}
 div#line{
     width: 1px;
-    height: 350px;
+    height: 400px;
     background-color: rgb(255, 154, 38);
     margin-top: auto;
     margin-left: 50%;
@@ -157,11 +266,11 @@ div#line{
     position: absolute;
     right: 0%;
 }
-*/
+
 footer#body-footer{
-    width: 940px;
+    width: 1200px;
     height: 75px;
     margin: 10px;
     background-color: rgb(255, 255, 255);
     float: left;
-}
+}*/
