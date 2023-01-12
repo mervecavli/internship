@@ -97,8 +97,7 @@ select#langs{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-
-
+    font-size: 12px;
 }
 .sidenav a#contact{
     padding-bottom: 120px;
@@ -147,6 +146,9 @@ nav ul li a{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: black;
+}
+nav ul li a:hover{
+    color:rgb(255, 154, 38);
 }
 
 nav ul#right li{
